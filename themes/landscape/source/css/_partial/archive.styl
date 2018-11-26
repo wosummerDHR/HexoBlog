@@ -1,8 +1,12 @@
 .archives-wrap
   margin: block-margin 0
 
-.archives
+.archives // 文章父节点
   clearfix()
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+
 
 .archive-year-wrap
   margin-bottom: 1em
@@ -10,20 +14,25 @@
 .archive-year
   @extend $block-caption
 
-.archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
 
-.archive-article
-  avoid-column-break()
+.archive-article   // 文章
+  // avoid-column-break()
+  display: inline-block
+  width 200px
+  height: 200px
+  margin-left: 20px;
+  &.hover
+    transition: 1s
+    background-color #ffc;
+  
 
 .archive-article-inner
-  @extend $block
+  @extend $block 
   padding: 10px
-  margin-bottom: 15px
+  height: 160px;
+  border-radius: 15px;
+  overflow hidden;
+  
 
 .archive-article-title
   text-decoration: none

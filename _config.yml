@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 磨蹭先生
+title: 锦鲤
 subtitle: 码农博客
 description: 一个码农的博客
-keywords:
+keywords: 前端
 author: 磨蹭先生
-language:
+language: zh-tw
 timezone: CH
 
 # URL
