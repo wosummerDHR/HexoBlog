@@ -4,12 +4,12 @@
 
 # Site
 title: 锦鲤
-subtitle: 码农博客
+subtitle: 锦鲤
 description: 一个码农的博客
 keywords: 前端
-author: 磨蹭先生
-language: zh-tw
-timezone: CH
+author: 锦鲤
+language: zh-CN
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -41,9 +41,18 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
+# mathjax: true # 启用数学公式
+# 并在相应文章的front-matter中添加mathjax: true，例如：
+# title: Test Math
+# date: 2016-04-05 14:16:00
+# categories: math
+# mathjax: true
+
+
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -73,9 +82,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: maupassant-hexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+search:
+  path: search.json
+  field: post
